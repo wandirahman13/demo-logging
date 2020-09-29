@@ -2,6 +2,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: curl-cron-job
+  namespace: logging
 spec:
   schedule: "* * * * *"
   jobTemplate:
